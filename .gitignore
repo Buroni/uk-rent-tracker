@@ -1,0 +1,4 @@
+.idea
+postcodes.csv
+crawl.sh
+**/__pycache__/
