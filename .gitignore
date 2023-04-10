@@ -1,5 +1,4 @@
 .idea
-postcodes.csv
 crawl.sh
 **/__pycache__/
 db/uk-rent.db
