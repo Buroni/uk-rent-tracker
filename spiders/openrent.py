@@ -17,7 +17,7 @@ class OpenrentSpider(RentSpider):
     download_delay = 3
 
     def start_requests(self):
-        property_rows = [row for row in self.cur.execute("SELECT postcode FROM postcodes").fetchall()]
+        property_rows = [row for row in self.cur.execute("SELECT postcode FROM postcodes").fetchall()][:5]
         for idx, (postcode,) in enumerate(property_rows):
             yield self._gen_request(postcode)
 
